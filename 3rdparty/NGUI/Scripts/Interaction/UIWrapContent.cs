@@ -171,14 +171,14 @@ public class UIWrapContent : MonoBehaviour
 	{
 		float extents = itemSize * mChildren.Count * 0.5f;
 		Vector3[] corners = mPanel.worldCorners;
-		
+
 		for (int i = 0; i < 4; ++i)
 		{
 			Vector3 v = corners[i];
 			v = mTrans.InverseTransformPoint(v);
 			corners[i] = v;
 		}
-		
+
 		Vector3 center = Vector3.Lerp(corners[0], corners[2], 0.5f);
 		bool allWithinRange = true;
 		float ext2 = extents * 2f;

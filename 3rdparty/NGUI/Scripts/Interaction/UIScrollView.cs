@@ -362,7 +362,7 @@ public class UIScrollView : MonoBehaviour
 		list.Add(this);
 		if (mStarted && Application.isPlaying) CheckScrollbars();
 	}
-
+		
 	void Start ()
 	{
 		mStarted = true;
